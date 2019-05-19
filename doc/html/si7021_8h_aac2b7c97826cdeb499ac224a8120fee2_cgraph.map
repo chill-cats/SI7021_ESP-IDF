@@ -1,0 +1,4 @@
+<map id="si7021_read_temperature" name="si7021_read_temperature">
+<area shape="rect" id="node2" href="$si7021_8c.html#a57535a0d0725840325a86fd77e609ed2" title="Get data from sensors by issuing read command and read data return by sensor. " alt="" coords="221,5,328,32"/>
+<area shape="rect" id="node3" href="$si7021_8c.html#afee080ad732330932eed4d9d1d93b45f" title="Check data integrity with crc. " alt="" coords="376,5,481,32"/>
+</map>
