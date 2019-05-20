@@ -42,7 +42,7 @@ var searchData=
   ['si7021_5freadprevtemp_5fcmd',['SI7021_READPREVTEMP_CMD',['../group__SI7021__I2C__CMD.html#gaf69388821d62e94cccd567f8861743a3',1,'si7021.h']]],
   ['si7021_5freadrht_5freg_5fcmd',['SI7021_READRHT_REG_CMD',['../group__SI7021__I2C__CMD.html#ga39482cdbef1a96514a58d25c30cab869',1,'si7021.h']]],
   ['si7021_5freset_5fcmd',['SI7021_RESET_CMD',['../group__SI7021__I2C__CMD.html#gaf46ed75ac39abc8aa85a2f08f6eaf2fb',1,'si7021.h']]],
-  ['si7021_5fresolution',['SI7021_RESOLUTION',['../si7021_8h.html#ad2e0aa498b8faee91d8da4930f61625e',1,'SI7021_RESOLUTION():&#160;si7021.h'],['../si7021_8h.html#afd2b81672571b0b768341fc251a9965b',1,'SI7021_RESOLUTION():&#160;si7021.h']]],
+  ['si7021_5fresolution',['SI7021_RESOLUTION',['../si7021_8h.html#ad2e0aa498b8faee91d8da4930f61625e',1,'SI7021_RESOLUTION():&#160;si7021.h'],['../si7021_8h.html#a5776594c8675bec0e49bfcc556d80850',1,'SI7021_RESOLUTION():&#160;si7021.h']]],
   ['si7021_20return_20value',['SI7021 Return Value',['../group__SI7021__RT__VALUE.html',1,'']]],
   ['si7021_5fset_5fheater_5fregister',['si7021_set_heater_register',['../si7021_8h.html#ab4db1385ee975ed53c1b4cb8b2f82da7',1,'si7021_set_heater_register(uint8_t value):&#160;si7021.c'],['../si7021_8c.html#ab4db1385ee975ed53c1b4cb8b2f82da7',1,'si7021_set_heater_register(uint8_t value):&#160;si7021.c']]],
   ['si7021_5fset_5fheater_5fstatus',['si7021_set_heater_status',['../si7021_8h.html#a65fe3b1e33bdbebf8df2c8d51bbbf675',1,'si7021_set_heater_status(uint8_t value):&#160;si7021.c'],['../si7021_8c.html#a65fe3b1e33bdbebf8df2c8d51bbbf675',1,'si7021_set_heater_status(uint8_t value):&#160;si7021.c']]],
