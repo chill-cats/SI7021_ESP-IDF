@@ -67,6 +67,7 @@ $(function() {
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -152,18 +153,6 @@ Macros</h2></td></tr>
 <tr class="separator:gadf36521836ea146264b0db90fd02fb45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf3c553ace8f63aa562e2263c47a1b5ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SI7021__RT__VALUE.html#gaf3c553ace8f63aa562e2263c47a1b5ed">SI7021_ERR_TIMEOUT</a>&#160;&#160;&#160;0x07</td></tr>
 <tr class="separator:gaf3c553ace8f63aa562e2263c47a1b5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3f5b7867b99b6ee38bb720a3831d7e71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SI7021__RES__HEX.html#ga3f5b7867b99b6ee38bb720a3831d7e71">SI7021_12_14_RES</a>&#160;&#160;&#160;0x00</td></tr>
-<tr class="separator:ga3f5b7867b99b6ee38bb720a3831d7e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga33d858dee2c4e4a3a7e6fa1bacafcb45"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SI7021__RES__HEX.html#ga33d858dee2c4e4a3a7e6fa1bacafcb45">SI7021_8_12_RES</a>&#160;&#160;&#160;0x01</td></tr>
-<tr class="separator:ga33d858dee2c4e4a3a7e6fa1bacafcb45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga82a64bcbb964960b65c9d5ee6b35b9b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SI7021__RES__HEX.html#ga82a64bcbb964960b65c9d5ee6b35b9b8">SI7021_10_13_RES</a>&#160;&#160;&#160;0x80</td></tr>
-<tr class="separator:ga82a64bcbb964960b65c9d5ee6b35b9b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga090f53b146c029df6f3d7239087e734b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SI7021__RES__HEX.html#ga090f53b146c029df6f3d7239087e734b">SI7021_11_11_RES</a>&#160;&#160;&#160;0x81</td></tr>
-<tr class="separator:ga090f53b146c029df6f3d7239087e734b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7934e73c20c5721d2781bf20cdb3b3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si7021_8h.html#ac7934e73c20c5721d2781bf20cdb3b3c">SI7021_VDD_OK</a>&#160;&#160;&#160;0x01</td></tr>
-<tr class="separator:ac7934e73c20c5721d2781bf20cdb3b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3635b86980e04705efb3d2b87aeafe7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si7021_8h.html#ac3635b86980e04705efb3d2b87aeafe7">SI7021_VDD_LOW</a>&#160;&#160;&#160;0x00</td></tr>
-<tr class="separator:ac3635b86980e04705efb3d2b87aeafe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af209481235e9da082e1447dc34478651"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si7021_8h.html#af209481235e9da082e1447dc34478651">SI7021_HEATER_ON</a>&#160;&#160;&#160;0x01</td></tr>
 <tr class="separator:af209481235e9da082e1447dc34478651"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b49e55ef2f682cfe12cd29a09283e68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si7021_8h.html#a7b49e55ef2f682cfe12cd29a09283e68">SI7021_HEATER_OFF</a>&#160;&#160;&#160;0x00</td></tr>
@@ -171,12 +160,33 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:afd2b81672571b0b768341fc251a9965b"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="si7021_8h.html#ad2e0aa498b8faee91d8da4930f61625e">SI7021_RESOLUTION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si7021_8h.html#afd2b81672571b0b768341fc251a9965b">SI7021_RESOLUTION</a></td></tr>
+<tr class="memdesc:afd2b81672571b0b768341fc251a9965b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum contain all valid Resolution configuration of sensor.  <a href="#afd2b81672571b0b768341fc251a9965b">More...</a><br /></td></tr>
+<tr class="separator:afd2b81672571b0b768341fc251a9965b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ebdc2e1ec4e81de336c5441a6b11a0e"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="si7021_8h.html#ae8747642c3a83dd9ae9ae0333b84f9f3">SI7021_VDD_STATUS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si7021_8h.html#a2ebdc2e1ec4e81de336c5441a6b11a0e">SI7021_VDD_STATUS</a></td></tr>
+<tr class="memdesc:a2ebdc2e1ec4e81de336c5441a6b11a0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">VDD status of sensor return type.  <a href="#a2ebdc2e1ec4e81de336c5441a6b11a0e">More...</a><br /></td></tr>
+<tr class="separator:a2ebdc2e1ec4e81de336c5441a6b11a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3065c7b8861b54caafcedcdc032f0e02"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structsi7021__config__t.html">si7021_config_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si7021_8h.html#a3065c7b8861b54caafcedcdc032f0e02">si7021_config_t</a></td></tr>
 <tr class="memdesc:a3065c7b8861b54caafcedcdc032f0e02"><td class="mdescLeft">&#160;</td><td class="mdescRight">SI7021 initialization parameter.  <a href="#a3065c7b8861b54caafcedcdc032f0e02">More...</a><br /></td></tr>
 <tr class="separator:a3065c7b8861b54caafcedcdc032f0e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeec681879f00b18fe17bddc989b9582d"><td class="memItemLeft" align="right" valign="top">typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si7021_8h.html#aeec681879f00b18fe17bddc989b9582d">si7021_err_t</a></td></tr>
 <tr class="memdesc:aeec681879f00b18fe17bddc989b9582d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error type for return value.  <a href="#aeec681879f00b18fe17bddc989b9582d">More...</a><br /></td></tr>
 <tr class="separator:aeec681879f00b18fe17bddc989b9582d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ad2e0aa498b8faee91d8da4930f61625e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si7021_8h.html#ad2e0aa498b8faee91d8da4930f61625e">SI7021_RESOLUTION</a> { <a class="el" href="si7021_8h.html#ad2e0aa498b8faee91d8da4930f61625eaf7e31fbc799b25fdc172fb9d6c01ae84">SI7021_12_14_RES</a> = 0x00, 
+<a class="el" href="si7021_8h.html#ad2e0aa498b8faee91d8da4930f61625ea3f096d60050714a92d1889dbb9d4ba8a">SI7021_8_12_RES</a> = 0x01, 
+<a class="el" href="si7021_8h.html#ad2e0aa498b8faee91d8da4930f61625ea2cfafb4c2314cb0c4a4ee0f840f5f3a1">SI7021_10_13_RES</a> = 0x80, 
+<a class="el" href="si7021_8h.html#ad2e0aa498b8faee91d8da4930f61625ea7db14da7bc2b59132110df783f3b31b0">SI7021_11_11_RES</a> = 0x81
+ }<tr class="memdesc:ad2e0aa498b8faee91d8da4930f61625e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum contain all valid Resolution configuration of sensor.  <a href="si7021_8h.html#ad2e0aa498b8faee91d8da4930f61625e">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:ad2e0aa498b8faee91d8da4930f61625e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8747642c3a83dd9ae9ae0333b84f9f3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si7021_8h.html#ae8747642c3a83dd9ae9ae0333b84f9f3">SI7021_VDD_STATUS</a> { <a class="el" href="si7021_8h.html#ae8747642c3a83dd9ae9ae0333b84f9f3acdfe83b75cad583ca9ee2997322174ea">SI7021_VDD_OK</a> = 0x01, 
+<a class="el" href="si7021_8h.html#ae8747642c3a83dd9ae9ae0333b84f9f3a1ad64fa668e0c9b079a23971c4bb1505">SI7021_VDD_LOW</a> = 0x00
+ }<tr class="memdesc:ae8747642c3a83dd9ae9ae0333b84f9f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">VDD status of sensor return type.  <a href="si7021_8h.html#ae8747642c3a83dd9ae9ae0333b84f9f3">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:ae8747642c3a83dd9ae9ae0333b84f9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -210,15 +220,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ab01f45ffce7fdfa1f150f4b3f15c4e33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="si7021_8h.html#aeec681879f00b18fe17bddc989b9582d">si7021_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si7021_8h.html#ab01f45ffce7fdfa1f150f4b3f15c4e33">__si7021_write_user_register</a> (uint8_t value)</td></tr>
 <tr class="memdesc:ab01f45ffce7fdfa1f150f4b3f15c4e33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write value to RH/T user register 1.  <a href="#ab01f45ffce7fdfa1f150f4b3f15c4e33">More...</a><br /></td></tr>
 <tr class="separator:ab01f45ffce7fdfa1f150f4b3f15c4e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0558cec0e5916d2bc09a51680fa04c2e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si7021_8h.html#a0558cec0e5916d2bc09a51680fa04c2e">si7021_get_resolution</a> ()</td></tr>
-<tr class="memdesc:a0558cec0e5916d2bc09a51680fa04c2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current resolution of sensor.  <a href="#a0558cec0e5916d2bc09a51680fa04c2e">More...</a><br /></td></tr>
-<tr class="separator:a0558cec0e5916d2bc09a51680fa04c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7347c3be7bfb07b492e4cbed1cdbcfb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="si7021_8h.html#ad2e0aa498b8faee91d8da4930f61625e">SI7021_RESOLUTION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si7021_8h.html#a7347c3be7bfb07b492e4cbed1cdbcfb9">si7021_get_resolution</a> ()</td></tr>
+<tr class="memdesc:a7347c3be7bfb07b492e4cbed1cdbcfb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current resolution of sensor.  <a href="#a7347c3be7bfb07b492e4cbed1cdbcfb9">More...</a><br /></td></tr>
+<tr class="separator:a7347c3be7bfb07b492e4cbed1cdbcfb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7800e376fe6c29d695e3dd36ad28a1e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="si7021_8h.html#aeec681879f00b18fe17bddc989b9582d">si7021_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si7021_8h.html#a7800e376fe6c29d695e3dd36ad28a1e9">si7021_soft_reset</a> ()</td></tr>
 <tr class="memdesc:a7800e376fe6c29d695e3dd36ad28a1e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the sensor.  <a href="#a7800e376fe6c29d695e3dd36ad28a1e9">More...</a><br /></td></tr>
 <tr class="separator:a7800e376fe6c29d695e3dd36ad28a1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d97945c1a14dd11da33f3fabacf6b27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="si7021_8h.html#aeec681879f00b18fe17bddc989b9582d">si7021_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si7021_8h.html#a4d97945c1a14dd11da33f3fabacf6b27">si7021_set_resolution</a> (uint8_t resolution)</td></tr>
-<tr class="memdesc:a4d97945c1a14dd11da33f3fabacf6b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the sensors resolution.  <a href="#a4d97945c1a14dd11da33f3fabacf6b27">More...</a><br /></td></tr>
-<tr class="separator:a4d97945c1a14dd11da33f3fabacf6b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd590ce231e3b83309411c505af7e169"><td class="memItemLeft" align="right" valign="top"><a class="el" href="si7021_8h.html#aeec681879f00b18fe17bddc989b9582d">si7021_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si7021_8h.html#afd590ce231e3b83309411c505af7e169">si7021_set_resolution</a> (<a class="el" href="si7021_8h.html#ad2e0aa498b8faee91d8da4930f61625e">SI7021_RESOLUTION</a> resolution)</td></tr>
+<tr class="memdesc:afd590ce231e3b83309411c505af7e169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the sensors resolution.  <a href="#afd590ce231e3b83309411c505af7e169">More...</a><br /></td></tr>
+<tr class="separator:afd590ce231e3b83309411c505af7e169"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4db1385ee975ed53c1b4cb8b2f82da7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="si7021_8h.html#aeec681879f00b18fe17bddc989b9582d">si7021_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si7021_8h.html#ab4db1385ee975ed53c1b4cb8b2f82da7">si7021_set_heater_register</a> (uint8_t value)</td></tr>
 <tr class="memdesc:ab4db1385ee975ed53c1b4cb8b2f82da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set heater register.  <a href="#ab4db1385ee975ed53c1b4cb8b2f82da7">More...</a><br /></td></tr>
 <tr class="separator:ab4db1385ee975ed53c1b4cb8b2f82da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,9 +241,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a1e1e3955782fa3079544f048d42ad88e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si7021_8h.html#a1e1e3955782fa3079544f048d42ad88e">si7021_read_firmware_rev</a> ()</td></tr>
 <tr class="memdesc:a1e1e3955782fa3079544f048d42ad88e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read sensor firmware revision.  <a href="#a1e1e3955782fa3079544f048d42ad88e">More...</a><br /></td></tr>
 <tr class="separator:a1e1e3955782fa3079544f048d42ad88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a140788067480f8a462ed2db6a07154d1"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si7021_8h.html#a140788067480f8a462ed2db6a07154d1">si7021_read_vdd_status</a> ()</td></tr>
-<tr class="memdesc:a140788067480f8a462ed2db6a07154d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check sensors VDD.  <a href="#a140788067480f8a462ed2db6a07154d1">More...</a><br /></td></tr>
-<tr class="separator:a140788067480f8a462ed2db6a07154d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b42332bda6837327d02700bbaca7060"><td class="memItemLeft" align="right" valign="top"><a class="el" href="si7021_8h.html#ae8747642c3a83dd9ae9ae0333b84f9f3">SI7021_VDD_STATUS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si7021_8h.html#a5b42332bda6837327d02700bbaca7060">si7021_read_vdd_status</a> ()</td></tr>
+<tr class="memdesc:a5b42332bda6837327d02700bbaca7060"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check sensors VDD.  <a href="#a5b42332bda6837327d02700bbaca7060">More...</a><br /></td></tr>
+<tr class="separator:a5b42332bda6837327d02700bbaca7060"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ec069cec3b96b638c8f0426aca309b2"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si7021_8h.html#a6ec069cec3b96b638c8f0426aca309b2">si7021_get_heater_status</a> ()</td></tr>
 <tr class="memdesc:a6ec069cec3b96b638c8f0426aca309b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check sensors heater status.  <a href="#a6ec069cec3b96b638c8f0426aca309b2">More...</a><br /></td></tr>
 <tr class="separator:a6ec069cec3b96b638c8f0426aca309b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -288,7 +298,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Heater is OFF </p>
 
-<p class="definition">Definition at line <a class="el" href="si7021_8h_source.html#l00098">98</a> of file <a class="el" href="si7021_8h_source.html">si7021.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si7021_8h_source.html#l00103">103</a> of file <a class="el" href="si7021_8h_source.html">si7021.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="si7021_8c_source.html#l00304">si7021_get_heater_status()</a>, and <a class="el" href="si7021_8c_source.html#l00361">si7021_set_heater_status()</a>.</p>
 
@@ -307,47 +317,9 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Heater is ON </p>
 
-<p class="definition">Definition at line <a class="el" href="si7021_8h_source.html#l00097">97</a> of file <a class="el" href="si7021_8h_source.html">si7021.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si7021_8h_source.html#l00102">102</a> of file <a class="el" href="si7021_8h_source.html">si7021.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="si7021_8c_source.html#l00304">si7021_get_heater_status()</a>, and <a class="el" href="si7021_8c_source.html#l00361">si7021_set_heater_status()</a>.</p>
-
-</div>
-</div>
-<a id="ac3635b86980e04705efb3d2b87aeafe7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3635b86980e04705efb3d2b87aeafe7">&#9670;&nbsp;</a></span>SI7021_VDD_LOW</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI7021_VDD_LOW&#160;&#160;&#160;0x00</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>VDD is LOW (1.9~1.8V) </p>
-
-<p class="definition">Definition at line <a class="el" href="si7021_8h_source.html#l00095">95</a> of file <a class="el" href="si7021_8h_source.html">si7021.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="si7021_8c_source.html#l00297">si7021_read_vdd_status()</a>.</p>
-
-</div>
-</div>
-<a id="ac7934e73c20c5721d2781bf20cdb3b3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7934e73c20c5721d2781bf20cdb3b3c">&#9670;&nbsp;</a></span>SI7021_VDD_OK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI7021_VDD_OK&#160;&#160;&#160;0x01</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>VDD is OK (&gt;1.9 V) </p>
-
-<p class="definition">Definition at line <a class="el" href="si7021_8h_source.html#l00094">94</a> of file <a class="el" href="si7021_8h_source.html">si7021.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="si7021_8c_source.html#l00297">si7021_read_vdd_status()</a>.</p>
 
 </div>
 </div>
@@ -385,7 +357,96 @@ i2c.h::i2c_config_t </dd></dl>
 
 <p>Error type for return value. </p>
 
-<p class="definition">Definition at line <a class="el" href="si7021_8h_source.html#l00117">117</a> of file <a class="el" href="si7021_8h_source.html">si7021.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si7021_8h_source.html#l00121">121</a> of file <a class="el" href="si7021_8h_source.html">si7021.h</a>.</p>
+
+</div>
+</div>
+<a id="afd2b81672571b0b768341fc251a9965b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd2b81672571b0b768341fc251a9965b">&#9670;&nbsp;</a></span>SI7021_RESOLUTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="si7021_8h.html#ad2e0aa498b8faee91d8da4930f61625e">SI7021_RESOLUTION</a> <a class="el" href="si7021_8h.html#ad2e0aa498b8faee91d8da4930f61625e">SI7021_RESOLUTION</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enum contain all valid Resolution configuration of sensor. </p>
+<dl class="section note"><dt>Note</dt><dd>Only bit 0 and bit 7 matter, other bits will be ignored </dd></dl>
+
+</div>
+</div>
+<a id="a2ebdc2e1ec4e81de336c5441a6b11a0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ebdc2e1ec4e81de336c5441a6b11a0e">&#9670;&nbsp;</a></span>SI7021_VDD_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="si7021_8h.html#ae8747642c3a83dd9ae9ae0333b84f9f3">SI7021_VDD_STATUS</a>  <a class="el" href="si7021_8h.html#ae8747642c3a83dd9ae9ae0333b84f9f3">SI7021_VDD_STATUS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>VDD status of sensor return type. </p>
+<dl class="section note"><dt>Note</dt><dd>Consider changing power supply if VDD is LOW, the sensor may not work correctly </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ad2e0aa498b8faee91d8da4930f61625e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2e0aa498b8faee91d8da4930f61625e">&#9670;&nbsp;</a></span>SI7021_RESOLUTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="si7021_8h.html#ad2e0aa498b8faee91d8da4930f61625e">SI7021_RESOLUTION</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enum contain all valid Resolution configuration of sensor. </p>
+<dl class="section note"><dt>Note</dt><dd>Only bit 0 and bit 7 matter, other bits will be ignored </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad2e0aa498b8faee91d8da4930f61625eaf7e31fbc799b25fdc172fb9d6c01ae84"></a>SI7021_12_14_RES&#160;</td><td class="fielddoc"><p>12bit RH resolution, 14bit temperature resolution </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad2e0aa498b8faee91d8da4930f61625ea3f096d60050714a92d1889dbb9d4ba8a"></a>SI7021_8_12_RES&#160;</td><td class="fielddoc"><p>8bit RH resolution, 12bit temperature resolution </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad2e0aa498b8faee91d8da4930f61625ea2cfafb4c2314cb0c4a4ee0f840f5f3a1"></a>SI7021_10_13_RES&#160;</td><td class="fielddoc"><p>10bit RH resolution, 13bit temperature resolution </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad2e0aa498b8faee91d8da4930f61625ea7db14da7bc2b59132110df783f3b31b0"></a>SI7021_11_11_RES&#160;</td><td class="fielddoc"><p>11bit RH resolution, 11bit temperature resolution </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="si7021_8h_source.html#l00087">87</a> of file <a class="el" href="si7021_8h_source.html">si7021.h</a>.</p>
+
+</div>
+</div>
+<a id="ae8747642c3a83dd9ae9ae0333b84f9f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8747642c3a83dd9ae9ae0333b84f9f3">&#9670;&nbsp;</a></span>SI7021_VDD_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="si7021_8h.html#ae8747642c3a83dd9ae9ae0333b84f9f3">SI7021_VDD_STATUS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>VDD status of sensor return type. </p>
+<dl class="section note"><dt>Note</dt><dd>Consider changing power supply if VDD is LOW, the sensor may not work correctly </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae8747642c3a83dd9ae9ae0333b84f9f3acdfe83b75cad583ca9ee2997322174ea"></a>SI7021_VDD_OK&#160;</td><td class="fielddoc"><p>VDD is OK (&gt;1.9 V) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae8747642c3a83dd9ae9ae0333b84f9f3a1ad64fa668e0c9b079a23971c4bb1505"></a>SI7021_VDD_LOW&#160;</td><td class="fielddoc"><p>VDD is LOW (1.9~1.8V) </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="si7021_8h_source.html#l00097">97</a> of file <a class="el" href="si7021_8h_source.html">si7021.h</a>.</p>
 
 </div>
 </div>
@@ -467,7 +528,7 @@ i2c.h::i2c_config_t </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="si7021_8c_source.html#l00061">61</a> of file <a class="el" href="si7021_8c_source.html">si7021.c</a>.</p>
 
-<p class="reference">References <a class="el" href="si7021_8h_source.html#l00072">SI7021_ERR_INSTALL</a>, <a class="el" href="si7021_8h_source.html#l00070">SI7021_ERR_OK</a>, and <a class="el" href="si7021_8h_source.html#l00109">si7021_config_t::si7021_port</a>.</p>
+<p class="reference">References <a class="el" href="si7021_8h_source.html#l00072">SI7021_ERR_INSTALL</a>, <a class="el" href="si7021_8h_source.html#l00070">SI7021_ERR_OK</a>, and <a class="el" href="si7021_8h_source.html#l00114">si7021_config_t::si7021_port</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="si7021_8c_source.html#l00034">si7021_init()</a>.</p>
 
@@ -505,7 +566,7 @@ i2c.h::i2c_config_t </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="si7021_8c_source.html#l00050">50</a> of file <a class="el" href="si7021_8c_source.html">si7021.c</a>.</p>
 
-<p class="reference">References <a class="el" href="si7021_8h_source.html#l00107">si7021_config_t::sensors_config</a>, <a class="el" href="si7021_8h_source.html#l00071">SI7021_ERR_CONFIG</a>, <a class="el" href="si7021_8h_source.html#l00070">SI7021_ERR_OK</a>, and <a class="el" href="si7021_8h_source.html#l00109">si7021_config_t::si7021_port</a>.</p>
+<p class="reference">References <a class="el" href="si7021_8h_source.html#l00112">si7021_config_t::sensors_config</a>, <a class="el" href="si7021_8h_source.html#l00071">SI7021_ERR_CONFIG</a>, <a class="el" href="si7021_8h_source.html#l00070">SI7021_ERR_OK</a>, and <a class="el" href="si7021_8h_source.html#l00114">si7021_config_t::si7021_port</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="si7021_8c_source.html#l00034">si7021_init()</a>.</p>
 
@@ -540,7 +601,7 @@ i2c.h::i2c_config_t </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="si7021_8c_source.html#l00102">102</a> of file <a class="el" href="si7021_8c_source.html">si7021.c</a>.</p>
 
-<p class="reference">References <a class="el" href="si7021_8c_source.html#l00142">__is_crc_valid()</a>, <a class="el" href="si7021_8h_source.html#l00041">SI7021_ADDR</a>, and <a class="el" href="si7021_8h_source.html#l00109">si7021_config_t::si7021_port</a>.</p>
+<p class="reference">References <a class="el" href="si7021_8c_source.html#l00142">__is_crc_valid()</a>, <a class="el" href="si7021_8h_source.html#l00041">SI7021_ADDR</a>, and <a class="el" href="si7021_8h_source.html#l00114">si7021_config_t::si7021_port</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="si7021_8c_source.html#l00094">si7021_read_humidity()</a>, and <a class="el" href="si7021_8c_source.html#l00086">si7021_read_temperature()</a>.</p>
 <div class="dynheader">
@@ -579,7 +640,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="si7021_8c_source.html#l00193">193</a> of file <a class="el" href="si7021_8c_source.html">si7021.c</a>.</p>
 
-<p class="reference">References <a class="el" href="si7021_8h_source.html#l00041">SI7021_ADDR</a>, <a class="el" href="si7021_8h_source.html#l00109">si7021_config_t::si7021_port</a>, and <a class="el" href="si7021_8h_source.html#l00055">SI7021_READRHT_REG_CMD</a>.</p>
+<p class="reference">References <a class="el" href="si7021_8h_source.html#l00041">SI7021_ADDR</a>, <a class="el" href="si7021_8h_source.html#l00114">si7021_config_t::si7021_port</a>, and <a class="el" href="si7021_8h_source.html#l00055">SI7021_READRHT_REG_CMD</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="si7021_8c_source.html#l00304">si7021_get_heater_status()</a>, <a class="el" href="si7021_8c_source.html#l00221">si7021_get_resolution()</a>, <a class="el" href="si7021_8c_source.html#l00297">si7021_read_vdd_status()</a>, <a class="el" href="si7021_8c_source.html#l00361">si7021_set_heater_status()</a>, and <a class="el" href="si7021_8c_source.html#l00225">si7021_set_resolution()</a>.</p>
 
@@ -620,7 +681,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="si7021_8c_source.html#l00240">240</a> of file <a class="el" href="si7021_8c_source.html">si7021.c</a>.</p>
 
-<p class="reference">References <a class="el" href="si7021_8h_source.html#l00041">SI7021_ADDR</a>, <a class="el" href="si7021_8h_source.html#l00075">SI7021_ERR_FAIL</a>, <a class="el" href="si7021_8h_source.html#l00074">SI7021_ERR_INVALID_ARG</a>, <a class="el" href="si7021_8h_source.html#l00076">SI7021_ERR_INVALID_STATE</a>, <a class="el" href="si7021_8h_source.html#l00070">SI7021_ERR_OK</a>, <a class="el" href="si7021_8h_source.html#l00077">SI7021_ERR_TIMEOUT</a>, <a class="el" href="si7021_8h_source.html#l00109">si7021_config_t::si7021_port</a>, and <a class="el" href="si7021_8h_source.html#l00054">SI7021_WRITERHT_REG_CMD</a>.</p>
+<p class="reference">References <a class="el" href="si7021_8h_source.html#l00041">SI7021_ADDR</a>, <a class="el" href="si7021_8h_source.html#l00075">SI7021_ERR_FAIL</a>, <a class="el" href="si7021_8h_source.html#l00074">SI7021_ERR_INVALID_ARG</a>, <a class="el" href="si7021_8h_source.html#l00076">SI7021_ERR_INVALID_STATE</a>, <a class="el" href="si7021_8h_source.html#l00070">SI7021_ERR_OK</a>, <a class="el" href="si7021_8h_source.html#l00077">SI7021_ERR_TIMEOUT</a>, <a class="el" href="si7021_8h_source.html#l00114">si7021_config_t::si7021_port</a>, and <a class="el" href="si7021_8h_source.html#l00054">SI7021_WRITERHT_REG_CMD</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="si7021_8c_source.html#l00361">si7021_set_heater_status()</a>, and <a class="el" href="si7021_8c_source.html#l00225">si7021_set_resolution()</a>.</p>
 
@@ -643,10 +704,11 @@ Here is the call graph for this function:</div>
 
 <p>Get sensor electronic id. </p>
 <dl class="section return"><dt>Returns</dt><dd>64bit (uint64_t) value contain sensor electronic id </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>if error happen, return 0xFFFFFFFFFFFFFFFF </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="si7021_8c_source.html#l00370">370</a> of file <a class="el" href="si7021_8c_source.html">si7021.c</a>.</p>
 
-<p class="reference">References <a class="el" href="si7021_8h_source.html#l00041">SI7021_ADDR</a>, <a class="el" href="si7021_8h_source.html#l00058">SI7021_ID1_CMD</a>, <a class="el" href="si7021_8h_source.html#l00059">SI7021_ID2_CMD</a>, and <a class="el" href="si7021_8h_source.html#l00109">si7021_config_t::si7021_port</a>.</p>
+<p class="reference">References <a class="el" href="si7021_8h_source.html#l00041">SI7021_ADDR</a>, <a class="el" href="si7021_8h_source.html#l00058">SI7021_ID1_CMD</a>, <a class="el" href="si7021_8h_source.html#l00059">SI7021_ID2_CMD</a>, and <a class="el" href="si7021_8h_source.html#l00114">si7021_config_t::si7021_port</a>.</p>
 
 </div>
 </div>
@@ -674,7 +736,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="si7021_8c_source.html#l00071">71</a> of file <a class="el" href="si7021_8c_source.html">si7021.c</a>.</p>
 
-<p class="reference">References <a class="el" href="si7021_8h_source.html#l00041">SI7021_ADDR</a>, <a class="el" href="si7021_8h_source.html#l00073">SI7021_ERR_NOTFOUND</a>, <a class="el" href="si7021_8h_source.html#l00070">SI7021_ERR_OK</a>, and <a class="el" href="si7021_8h_source.html#l00109">si7021_config_t::si7021_port</a>.</p>
+<p class="reference">References <a class="el" href="si7021_8h_source.html#l00041">SI7021_ADDR</a>, <a class="el" href="si7021_8h_source.html#l00073">SI7021_ERR_NOTFOUND</a>, <a class="el" href="si7021_8h_source.html#l00070">SI7021_ERR_OK</a>, and <a class="el" href="si7021_8h_source.html#l00114">si7021_config_t::si7021_port</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="si7021_8c_source.html#l00034">si7021_init()</a>.</p>
 
@@ -708,7 +770,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="si7021_8c_source.html#l00311">311</a> of file <a class="el" href="si7021_8c_source.html">si7021.c</a>.</p>
 
-<p class="reference">References <a class="el" href="si7021_8h_source.html#l00041">SI7021_ADDR</a>, <a class="el" href="si7021_8h_source.html#l00109">si7021_config_t::si7021_port</a>, and <a class="el" href="si7021_8h_source.html#l00057">SI7021_READHEATER_REG_CMD</a>.</p>
+<p class="reference">References <a class="el" href="si7021_8h_source.html#l00041">SI7021_ADDR</a>, <a class="el" href="si7021_8h_source.html#l00114">si7021_config_t::si7021_port</a>, and <a class="el" href="si7021_8h_source.html#l00057">SI7021_READHEATER_REG_CMD</a>.</p>
 
 </div>
 </div>
@@ -736,7 +798,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="si7021_8c_source.html#l00304">304</a> of file <a class="el" href="si7021_8c_source.html">si7021.c</a>.</p>
 
-<p class="reference">References <a class="el" href="si7021_8c_source.html#l00193">__si7021_read_user_register()</a>, <a class="el" href="si7021_8h_source.html#l00098">SI7021_HEATER_OFF</a>, and <a class="el" href="si7021_8h_source.html#l00097">SI7021_HEATER_ON</a>.</p>
+<p class="reference">References <a class="el" href="si7021_8c_source.html#l00193">__si7021_read_user_register()</a>, <a class="el" href="si7021_8h_source.html#l00103">SI7021_HEATER_OFF</a>, and <a class="el" href="si7021_8h_source.html#l00102">SI7021_HEATER_ON</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -748,14 +810,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a0558cec0e5916d2bc09a51680fa04c2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0558cec0e5916d2bc09a51680fa04c2e">&#9670;&nbsp;</a></span>si7021_get_resolution()</h2>
+<a id="a7347c3be7bfb07b492e4cbed1cdbcfb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7347c3be7bfb07b492e4cbed1cdbcfb9">&#9670;&nbsp;</a></span>si7021_get_resolution()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t si7021_get_resolution </td>
+          <td class="memname"><a class="el" href="si7021_8h.html#ad2e0aa498b8faee91d8da4930f61625e">SI7021_RESOLUTION</a> si7021_get_resolution </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -778,8 +840,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="si7021_8h_a0558cec0e5916d2bc09a51680fa04c2e_cgraph.png" border="0" usemap="#si7021_8h_a0558cec0e5916d2bc09a51680fa04c2e_cgraph" alt=""/></div>
-<map name="si7021_8h_a0558cec0e5916d2bc09a51680fa04c2e_cgraph" id="si7021_8h_a0558cec0e5916d2bc09a51680fa04c2e_cgraph">
+<div class="center"><img src="si7021_8h_a7347c3be7bfb07b492e4cbed1cdbcfb9_cgraph.png" border="0" usemap="#si7021_8h_a7347c3be7bfb07b492e4cbed1cdbcfb9_cgraph" alt=""/></div>
+<map name="si7021_8h_a7347c3be7bfb07b492e4cbed1cdbcfb9_cgraph" id="si7021_8h_a7347c3be7bfb07b492e4cbed1cdbcfb9_cgraph">
 <area shape="rect" id="node2" href="si7021_8c.html#a91041d121bd0dff34dc9383479286e2d" title="Read RH/T user register 1 from sensor. " alt="" coords="201,5,340,47"/>
 </map>
 </div>
@@ -857,7 +919,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="si7021_8c_source.html#l00269">269</a> of file <a class="el" href="si7021_8c_source.html">si7021.c</a>.</p>
 
-<p class="reference">References <a class="el" href="si7021_8h_source.html#l00041">SI7021_ADDR</a>, <a class="el" href="si7021_8h_source.html#l00060">SI7021_FIRMVERS_CMD</a>, and <a class="el" href="si7021_8h_source.html#l00109">si7021_config_t::si7021_port</a>.</p>
+<p class="reference">References <a class="el" href="si7021_8h_source.html#l00041">SI7021_ADDR</a>, <a class="el" href="si7021_8h_source.html#l00060">SI7021_FIRMVERS_CMD</a>, and <a class="el" href="si7021_8h_source.html#l00114">si7021_config_t::si7021_port</a>.</p>
 
 </div>
 </div>
@@ -927,14 +989,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a140788067480f8a462ed2db6a07154d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a140788067480f8a462ed2db6a07154d1">&#9670;&nbsp;</a></span>si7021_read_vdd_status()</h2>
+<a id="a5b42332bda6837327d02700bbaca7060"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b42332bda6837327d02700bbaca7060">&#9670;&nbsp;</a></span>si7021_read_vdd_status()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t si7021_read_vdd_status </td>
+          <td class="memname"><a class="el" href="si7021_8h.html#ae8747642c3a83dd9ae9ae0333b84f9f3">SI7021_VDD_STATUS</a> si7021_read_vdd_status </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -944,20 +1006,20 @@ Here is the call graph for this function:</div>
 
 <p>Check sensors VDD. </p>
 <dl class="section return"><dt>Returns</dt><dd>8bit (uint8_t) value<ul>
-<li><a class="el" href="si7021_8h.html#ac7934e73c20c5721d2781bf20cdb3b3c">SI7021_VDD_OK</a> VDD is OK</li>
-<li><a class="el" href="si7021_8h.html#ac3635b86980e04705efb3d2b87aeafe7">SI7021_VDD_LOW</a> VDD is LOW </li>
+<li><a class="el" href="si7021_8h.html#ae8747642c3a83dd9ae9ae0333b84f9f3acdfe83b75cad583ca9ee2997322174ea">SI7021_VDD_OK</a> VDD is OK</li>
+<li><a class="el" href="si7021_8h.html#ae8747642c3a83dd9ae9ae0333b84f9f3a1ad64fa668e0c9b079a23971c4bb1505">SI7021_VDD_LOW</a> VDD is LOW </li>
 </ul>
 </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Consider changing power supply when VDD is LOW, sensors may not work correctly </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="si7021_8c_source.html#l00297">297</a> of file <a class="el" href="si7021_8c_source.html">si7021.c</a>.</p>
 
-<p class="reference">References <a class="el" href="si7021_8c_source.html#l00193">__si7021_read_user_register()</a>, <a class="el" href="si7021_8h_source.html#l00095">SI7021_VDD_LOW</a>, and <a class="el" href="si7021_8h_source.html#l00094">SI7021_VDD_OK</a>.</p>
+<p class="reference">References <a class="el" href="si7021_8c_source.html#l00193">__si7021_read_user_register()</a>, <a class="el" href="si7021_8h_source.html#l00099">SI7021_VDD_LOW</a>, and <a class="el" href="si7021_8h_source.html#l00098">SI7021_VDD_OK</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="si7021_8h_a140788067480f8a462ed2db6a07154d1_cgraph.png" border="0" usemap="#si7021_8h_a140788067480f8a462ed2db6a07154d1_cgraph" alt=""/></div>
-<map name="si7021_8h_a140788067480f8a462ed2db6a07154d1_cgraph" id="si7021_8h_a140788067480f8a462ed2db6a07154d1_cgraph">
+<div class="center"><img src="si7021_8h_a5b42332bda6837327d02700bbaca7060_cgraph.png" border="0" usemap="#si7021_8h_a5b42332bda6837327d02700bbaca7060_cgraph" alt=""/></div>
+<map name="si7021_8h_a5b42332bda6837327d02700bbaca7060_cgraph" id="si7021_8h_a5b42332bda6837327d02700bbaca7060_cgraph">
 <area shape="rect" id="node2" href="si7021_8c.html#a91041d121bd0dff34dc9383479286e2d" title="Read RH/T user register 1 from sensor. " alt="" coords="216,5,355,47"/>
 </map>
 </div>
@@ -998,7 +1060,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="si7021_8c_source.html#l00338">338</a> of file <a class="el" href="si7021_8c_source.html">si7021.c</a>.</p>
 
-<p class="reference">References <a class="el" href="si7021_8h_source.html#l00041">SI7021_ADDR</a>, <a class="el" href="si7021_8h_source.html#l00075">SI7021_ERR_FAIL</a>, <a class="el" href="si7021_8h_source.html#l00074">SI7021_ERR_INVALID_ARG</a>, <a class="el" href="si7021_8h_source.html#l00076">SI7021_ERR_INVALID_STATE</a>, <a class="el" href="si7021_8h_source.html#l00070">SI7021_ERR_OK</a>, <a class="el" href="si7021_8h_source.html#l00077">SI7021_ERR_TIMEOUT</a>, <a class="el" href="si7021_8h_source.html#l00109">si7021_config_t::si7021_port</a>, and <a class="el" href="si7021_8h_source.html#l00056">SI7021_WRITEHEATER_REG_CMD</a>.</p>
+<p class="reference">References <a class="el" href="si7021_8h_source.html#l00041">SI7021_ADDR</a>, <a class="el" href="si7021_8h_source.html#l00075">SI7021_ERR_FAIL</a>, <a class="el" href="si7021_8h_source.html#l00074">SI7021_ERR_INVALID_ARG</a>, <a class="el" href="si7021_8h_source.html#l00076">SI7021_ERR_INVALID_STATE</a>, <a class="el" href="si7021_8h_source.html#l00070">SI7021_ERR_OK</a>, <a class="el" href="si7021_8h_source.html#l00077">SI7021_ERR_TIMEOUT</a>, <a class="el" href="si7021_8h_source.html#l00114">si7021_config_t::si7021_port</a>, and <a class="el" href="si7021_8h_source.html#l00056">SI7021_WRITEHEATER_REG_CMD</a>.</p>
 
 </div>
 </div>
@@ -1032,7 +1094,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="si7021_8c_source.html#l00361">361</a> of file <a class="el" href="si7021_8c_source.html">si7021.c</a>.</p>
 
-<p class="reference">References <a class="el" href="si7021_8c_source.html#l00193">__si7021_read_user_register()</a>, <a class="el" href="si7021_8c_source.html#l00240">__si7021_write_user_register()</a>, <a class="el" href="si7021_8h_source.html#l00098">SI7021_HEATER_OFF</a>, and <a class="el" href="si7021_8h_source.html#l00097">SI7021_HEATER_ON</a>.</p>
+<p class="reference">References <a class="el" href="si7021_8c_source.html#l00193">__si7021_read_user_register()</a>, <a class="el" href="si7021_8c_source.html#l00240">__si7021_write_user_register()</a>, <a class="el" href="si7021_8h_source.html#l00103">SI7021_HEATER_OFF</a>, and <a class="el" href="si7021_8h_source.html#l00102">SI7021_HEATER_ON</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1045,8 +1107,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a4d97945c1a14dd11da33f3fabacf6b27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d97945c1a14dd11da33f3fabacf6b27">&#9670;&nbsp;</a></span>si7021_set_resolution()</h2>
+<a id="afd590ce231e3b83309411c505af7e169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd590ce231e3b83309411c505af7e169">&#9670;&nbsp;</a></span>si7021_set_resolution()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1054,7 +1116,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname"><a class="el" href="si7021_8h.html#aeec681879f00b18fe17bddc989b9582d">si7021_err_t</a> si7021_set_resolution </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramtype"><a class="el" href="si7021_8h.html#ad2e0aa498b8faee91d8da4930f61625e">SI7021_RESOLUTION</a>&#160;</td>
           <td class="paramname"><em>resolution</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1083,8 +1145,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="si7021_8h_a4d97945c1a14dd11da33f3fabacf6b27_cgraph.png" border="0" usemap="#si7021_8h_a4d97945c1a14dd11da33f3fabacf6b27_cgraph" alt=""/></div>
-<map name="si7021_8h_a4d97945c1a14dd11da33f3fabacf6b27_cgraph" id="si7021_8h_a4d97945c1a14dd11da33f3fabacf6b27_cgraph">
+<div class="center"><img src="si7021_8h_afd590ce231e3b83309411c505af7e169_cgraph.png" border="0" usemap="#si7021_8h_afd590ce231e3b83309411c505af7e169_cgraph" alt=""/></div>
+<map name="si7021_8h_afd590ce231e3b83309411c505af7e169_cgraph" id="si7021_8h_afd590ce231e3b83309411c505af7e169_cgraph">
 <area shape="rect" id="node2" href="si7021_8c.html#a91041d121bd0dff34dc9383479286e2d" title="Read RH/T user register 1 from sensor. " alt="" coords="203,5,341,47"/>
 <area shape="rect" id="node3" href="si7021_8c.html#ab01f45ffce7fdfa1f150f4b3f15c4e33" title="Write value to RH/T user register 1. " alt="" coords="201,71,343,112"/>
 </map>
@@ -1120,7 +1182,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="si7021_8c_source.html#l00167">167</a> of file <a class="el" href="si7021_8c_source.html">si7021.c</a>.</p>
 
-<p class="reference">References <a class="el" href="si7021_8h_source.html#l00041">SI7021_ADDR</a>, <a class="el" href="si7021_8h_source.html#l00075">SI7021_ERR_FAIL</a>, <a class="el" href="si7021_8h_source.html#l00074">SI7021_ERR_INVALID_ARG</a>, <a class="el" href="si7021_8h_source.html#l00076">SI7021_ERR_INVALID_STATE</a>, <a class="el" href="si7021_8h_source.html#l00070">SI7021_ERR_OK</a>, <a class="el" href="si7021_8h_source.html#l00077">SI7021_ERR_TIMEOUT</a>, <a class="el" href="si7021_8h_source.html#l00109">si7021_config_t::si7021_port</a>, and <a class="el" href="si7021_8h_source.html#l00061">SI7021_SOFT_RESET_CMD</a>.</p>
+<p class="reference">References <a class="el" href="si7021_8h_source.html#l00041">SI7021_ADDR</a>, <a class="el" href="si7021_8h_source.html#l00075">SI7021_ERR_FAIL</a>, <a class="el" href="si7021_8h_source.html#l00074">SI7021_ERR_INVALID_ARG</a>, <a class="el" href="si7021_8h_source.html#l00076">SI7021_ERR_INVALID_STATE</a>, <a class="el" href="si7021_8h_source.html#l00070">SI7021_ERR_OK</a>, <a class="el" href="si7021_8h_source.html#l00077">SI7021_ERR_TIMEOUT</a>, <a class="el" href="si7021_8h_source.html#l00114">si7021_config_t::si7021_port</a>, and <a class="el" href="si7021_8h_source.html#l00061">SI7021_SOFT_RESET_CMD</a>.</p>
 
 </div>
 </div>
@@ -1139,7 +1201,7 @@ Here is the call graph for this function:</div>
 
 <p>Internal variable for storing sensor information. </p>
 
-<p class="definition">Definition at line <a class="el" href="si7021_8h_source.html#l00123">123</a> of file <a class="el" href="si7021_8h_source.html">si7021.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si7021_8h_source.html#l00126">126</a> of file <a class="el" href="si7021_8h_source.html">si7021.h</a>.</p>
 
 </div>
 </div>

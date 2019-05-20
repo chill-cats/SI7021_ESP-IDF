@@ -79,18 +79,6 @@ struct \hyperlink{structsi7021__config__t}{si7021\+\_\+config\+\_\+t}
 \item 
 \#define \hyperlink{group__SI7021__RT__VALUE_gaf3c553ace8f63aa562e2263c47a1b5ed}{S\+I7021\+\_\+\+E\+R\+R\+\_\+\+T\+I\+M\+E\+O\+UT}~0x07
 \item 
-\#define \hyperlink{group__SI7021__RES__HEX_ga3f5b7867b99b6ee38bb720a3831d7e71}{S\+I7021\+\_\+12\+\_\+14\+\_\+\+R\+ES}~0x00
-\item 
-\#define \hyperlink{group__SI7021__RES__HEX_ga33d858dee2c4e4a3a7e6fa1bacafcb45}{S\+I7021\+\_\+8\+\_\+12\+\_\+\+R\+ES}~0x01
-\item 
-\#define \hyperlink{group__SI7021__RES__HEX_ga82a64bcbb964960b65c9d5ee6b35b9b8}{S\+I7021\+\_\+10\+\_\+13\+\_\+\+R\+ES}~0x80
-\item 
-\#define \hyperlink{group__SI7021__RES__HEX_ga090f53b146c029df6f3d7239087e734b}{S\+I7021\+\_\+11\+\_\+11\+\_\+\+R\+ES}~0x81
-\item 
-\#define \hyperlink{si7021_8h_ac7934e73c20c5721d2781bf20cdb3b3c}{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+OK}~0x01
-\item 
-\#define \hyperlink{si7021_8h_ac3635b86980e04705efb3d2b87aeafe7}{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+L\+OW}~0x00
-\item 
 \#define \hyperlink{si7021_8h_af209481235e9da082e1447dc34478651}{S\+I7021\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+ON}~0x01
 \item 
 \#define \hyperlink{si7021_8h_a7b49e55ef2f682cfe12cd29a09283e68}{S\+I7021\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+O\+FF}~0x00
@@ -98,10 +86,27 @@ struct \hyperlink{structsi7021__config__t}{si7021\+\_\+config\+\_\+t}
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
+typedef enum \hyperlink{si7021_8h_ad2e0aa498b8faee91d8da4930f61625e}{S\+I7021\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON} \hyperlink{si7021_8h_afd2b81672571b0b768341fc251a9965b}{S\+I7021\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON}
+\begin{DoxyCompactList}\small\item\em Enum contain all valid Resolution configuration of sensor. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{si7021_8h_ae8747642c3a83dd9ae9ae0333b84f9f3}{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+S\+T\+A\+T\+US} \hyperlink{si7021_8h_a2ebdc2e1ec4e81de336c5441a6b11a0e}{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+S\+T\+A\+T\+US}
+\begin{DoxyCompactList}\small\item\em V\+DD status of sensor return type. \end{DoxyCompactList}\item 
 typedef struct \hyperlink{structsi7021__config__t}{si7021\+\_\+config\+\_\+t} \hyperlink{si7021_8h_a3065c7b8861b54caafcedcdc032f0e02}{si7021\+\_\+config\+\_\+t}
 \begin{DoxyCompactList}\small\item\em S\+I7021 initialization parameter. \end{DoxyCompactList}\item 
 typedef uint8\+\_\+t \hyperlink{si7021_8h_aeec681879f00b18fe17bddc989b9582d}{si7021\+\_\+err\+\_\+t}
 \begin{DoxyCompactList}\small\item\em Error type for return value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{si7021_8h_ad2e0aa498b8faee91d8da4930f61625e}{S\+I7021\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON} \{ \hyperlink{si7021_8h_ad2e0aa498b8faee91d8da4930f61625eaf7e31fbc799b25fdc172fb9d6c01ae84}{S\+I7021\+\_\+12\+\_\+14\+\_\+\+R\+ES} = 0x00, 
+\hyperlink{si7021_8h_ad2e0aa498b8faee91d8da4930f61625ea3f096d60050714a92d1889dbb9d4ba8a}{S\+I7021\+\_\+8\+\_\+12\+\_\+\+R\+ES} = 0x01, 
+\hyperlink{si7021_8h_ad2e0aa498b8faee91d8da4930f61625ea2cfafb4c2314cb0c4a4ee0f840f5f3a1}{S\+I7021\+\_\+10\+\_\+13\+\_\+\+R\+ES} = 0x80, 
+\hyperlink{si7021_8h_ad2e0aa498b8faee91d8da4930f61625ea7db14da7bc2b59132110df783f3b31b0}{S\+I7021\+\_\+11\+\_\+11\+\_\+\+R\+ES} = 0x81
+ \}\begin{DoxyCompactList}\small\item\em Enum contain all valid Resolution configuration of sensor. \end{DoxyCompactList}
+\item 
+enum \hyperlink{si7021_8h_ae8747642c3a83dd9ae9ae0333b84f9f3}{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+S\+T\+A\+T\+US} \{ \hyperlink{si7021_8h_ae8747642c3a83dd9ae9ae0333b84f9f3acdfe83b75cad583ca9ee2997322174ea}{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+OK} = 0x01, 
+\hyperlink{si7021_8h_ae8747642c3a83dd9ae9ae0333b84f9f3a1ad64fa668e0c9b079a23971c4bb1505}{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+L\+OW} = 0x00
+ \}\begin{DoxyCompactList}\small\item\em V\+DD status of sensor return type. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -125,11 +130,11 @@ uint8\+\_\+t \hyperlink{si7021_8h_a91041d121bd0dff34dc9383479286e2d}{\+\_\+\+\_\
 \begin{DoxyCompactList}\small\item\em Read R\+H/T user register 1 from sensor. \end{DoxyCompactList}\item 
 \hyperlink{si7021_8h_aeec681879f00b18fe17bddc989b9582d}{si7021\+\_\+err\+\_\+t} \hyperlink{si7021_8h_ab01f45ffce7fdfa1f150f4b3f15c4e33}{\+\_\+\+\_\+si7021\+\_\+write\+\_\+user\+\_\+register} (uint8\+\_\+t value)
 \begin{DoxyCompactList}\small\item\em Write value to R\+H/T user register 1. \end{DoxyCompactList}\item 
-uint8\+\_\+t \hyperlink{si7021_8h_a0558cec0e5916d2bc09a51680fa04c2e}{si7021\+\_\+get\+\_\+resolution} ()
+\hyperlink{si7021_8h_ad2e0aa498b8faee91d8da4930f61625e}{S\+I7021\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON} \hyperlink{si7021_8h_a7347c3be7bfb07b492e4cbed1cdbcfb9}{si7021\+\_\+get\+\_\+resolution} ()
 \begin{DoxyCompactList}\small\item\em Get current resolution of sensor. \end{DoxyCompactList}\item 
 \hyperlink{si7021_8h_aeec681879f00b18fe17bddc989b9582d}{si7021\+\_\+err\+\_\+t} \hyperlink{si7021_8h_a7800e376fe6c29d695e3dd36ad28a1e9}{si7021\+\_\+soft\+\_\+reset} ()
 \begin{DoxyCompactList}\small\item\em Reset the sensor. \end{DoxyCompactList}\item 
-\hyperlink{si7021_8h_aeec681879f00b18fe17bddc989b9582d}{si7021\+\_\+err\+\_\+t} \hyperlink{si7021_8h_a4d97945c1a14dd11da33f3fabacf6b27}{si7021\+\_\+set\+\_\+resolution} (uint8\+\_\+t resolution)
+\hyperlink{si7021_8h_aeec681879f00b18fe17bddc989b9582d}{si7021\+\_\+err\+\_\+t} \hyperlink{si7021_8h_afd590ce231e3b83309411c505af7e169}{si7021\+\_\+set\+\_\+resolution} (\hyperlink{si7021_8h_ad2e0aa498b8faee91d8da4930f61625e}{S\+I7021\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON} resolution)
 \begin{DoxyCompactList}\small\item\em Set the sensors resolution. \end{DoxyCompactList}\item 
 \hyperlink{si7021_8h_aeec681879f00b18fe17bddc989b9582d}{si7021\+\_\+err\+\_\+t} \hyperlink{si7021_8h_ab4db1385ee975ed53c1b4cb8b2f82da7}{si7021\+\_\+set\+\_\+heater\+\_\+register} (uint8\+\_\+t value)
 \begin{DoxyCompactList}\small\item\em Set heater register. \end{DoxyCompactList}\item 
@@ -139,7 +144,7 @@ uint8\+\_\+t \hyperlink{si7021_8h_ad85d7885ebbb87e1ac1f12b78a6c0af7}{si7021\+\_\
 \begin{DoxyCompactList}\small\item\em Read heater register. \end{DoxyCompactList}\item 
 uint8\+\_\+t \hyperlink{si7021_8h_a1e1e3955782fa3079544f048d42ad88e}{si7021\+\_\+read\+\_\+firmware\+\_\+rev} ()
 \begin{DoxyCompactList}\small\item\em Read sensor firmware revision. \end{DoxyCompactList}\item 
-uint8\+\_\+t \hyperlink{si7021_8h_a140788067480f8a462ed2db6a07154d1}{si7021\+\_\+read\+\_\+vdd\+\_\+status} ()
+\hyperlink{si7021_8h_ae8747642c3a83dd9ae9ae0333b84f9f3}{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+S\+T\+A\+T\+US} \hyperlink{si7021_8h_a5b42332bda6837327d02700bbaca7060}{si7021\+\_\+read\+\_\+vdd\+\_\+status} ()
 \begin{DoxyCompactList}\small\item\em Check sensors V\+DD. \end{DoxyCompactList}\item 
 uint8\+\_\+t \hyperlink{si7021_8h_a6ec069cec3b96b638c8f0426aca309b2}{si7021\+\_\+get\+\_\+heater\+\_\+status} ()
 \begin{DoxyCompactList}\small\item\em Check sensors heater status. \end{DoxyCompactList}\item 
@@ -192,7 +197,7 @@ Referenced by \+\_\+\+\_\+si7021\+\_\+read(), \+\_\+\+\_\+si7021\+\_\+read\+\_\+
 
 Heater is O\+FF 
 
-Definition at line 98 of file si7021.\+h.
+Definition at line 103 of file si7021.\+h.
 
 
 
@@ -206,39 +211,11 @@ Referenced by si7021\+\_\+get\+\_\+heater\+\_\+status(), and si7021\+\_\+set\+\_
 
 Heater is ON 
 
-Definition at line 97 of file si7021.\+h.
+Definition at line 102 of file si7021.\+h.
 
 
 
 Referenced by si7021\+\_\+get\+\_\+heater\+\_\+status(), and si7021\+\_\+set\+\_\+heater\+\_\+status().
-
-\mbox{\Hypertarget{si7021_8h_ac3635b86980e04705efb3d2b87aeafe7}\label{si7021_8h_ac3635b86980e04705efb3d2b87aeafe7}} 
-\index{si7021.\+h@{si7021.\+h}!S\+I7021\+\_\+\+V\+D\+D\+\_\+\+L\+OW@{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+L\+OW}}
-\index{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+L\+OW@{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+L\+OW}!si7021.\+h@{si7021.\+h}}
-\subsubsection{\texorpdfstring{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+L\+OW}{SI7021\_VDD\_LOW}}
-{\footnotesize\ttfamily \#define S\+I7021\+\_\+\+V\+D\+D\+\_\+\+L\+OW~0x00}
-
-V\+DD is L\+OW (1.\+9$\sim$1.8V) 
-
-Definition at line 95 of file si7021.\+h.
-
-
-
-Referenced by si7021\+\_\+read\+\_\+vdd\+\_\+status().
-
-\mbox{\Hypertarget{si7021_8h_ac7934e73c20c5721d2781bf20cdb3b3c}\label{si7021_8h_ac7934e73c20c5721d2781bf20cdb3b3c}} 
-\index{si7021.\+h@{si7021.\+h}!S\+I7021\+\_\+\+V\+D\+D\+\_\+\+OK@{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+OK}}
-\index{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+OK@{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+OK}!si7021.\+h@{si7021.\+h}}
-\subsubsection{\texorpdfstring{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+OK}{SI7021\_VDD\_OK}}
-{\footnotesize\ttfamily \#define S\+I7021\+\_\+\+V\+D\+D\+\_\+\+OK~0x01}
-
-V\+DD is OK ($>$1.\+9 V) 
-
-Definition at line 94 of file si7021.\+h.
-
-
-
-Referenced by si7021\+\_\+read\+\_\+vdd\+\_\+status().
 
 
 
@@ -270,7 +247,98 @@ Error type for return value.
 
 
 
-Definition at line 117 of file si7021.\+h.
+Definition at line 121 of file si7021.\+h.
+
+\mbox{\Hypertarget{si7021_8h_afd2b81672571b0b768341fc251a9965b}\label{si7021_8h_afd2b81672571b0b768341fc251a9965b}} 
+\index{si7021.\+h@{si7021.\+h}!S\+I7021\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON@{S\+I7021\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON}}
+\index{S\+I7021\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON@{S\+I7021\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON}!si7021.\+h@{si7021.\+h}}
+\subsubsection{\texorpdfstring{S\+I7021\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON}{SI7021\_RESOLUTION}}
+{\footnotesize\ttfamily typedef enum \hyperlink{si7021_8h_ad2e0aa498b8faee91d8da4930f61625e}{S\+I7021\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON} \hyperlink{si7021_8h_ad2e0aa498b8faee91d8da4930f61625e}{S\+I7021\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON}}
+
+
+
+Enum contain all valid Resolution configuration of sensor. 
+
+\begin{DoxyNote}{Note}
+Only bit 0 and bit 7 matter, other bits will be ignored 
+\end{DoxyNote}
+\mbox{\Hypertarget{si7021_8h_a2ebdc2e1ec4e81de336c5441a6b11a0e}\label{si7021_8h_a2ebdc2e1ec4e81de336c5441a6b11a0e}} 
+\index{si7021.\+h@{si7021.\+h}!S\+I7021\+\_\+\+V\+D\+D\+\_\+\+S\+T\+A\+T\+US@{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+S\+T\+A\+T\+US}}
+\index{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+S\+T\+A\+T\+US@{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+S\+T\+A\+T\+US}!si7021.\+h@{si7021.\+h}}
+\subsubsection{\texorpdfstring{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+S\+T\+A\+T\+US}{SI7021\_VDD\_STATUS}}
+{\footnotesize\ttfamily typedef enum \hyperlink{si7021_8h_ae8747642c3a83dd9ae9ae0333b84f9f3}{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+S\+T\+A\+T\+US}  \hyperlink{si7021_8h_ae8747642c3a83dd9ae9ae0333b84f9f3}{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+S\+T\+A\+T\+US}}
+
+
+
+V\+DD status of sensor return type. 
+
+\begin{DoxyNote}{Note}
+Consider changing power supply if V\+DD is L\+OW, the sensor may not work correctly 
+\end{DoxyNote}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{si7021_8h_ad2e0aa498b8faee91d8da4930f61625e}\label{si7021_8h_ad2e0aa498b8faee91d8da4930f61625e}} 
+\index{si7021.\+h@{si7021.\+h}!S\+I7021\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON@{S\+I7021\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON}}
+\index{S\+I7021\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON@{S\+I7021\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON}!si7021.\+h@{si7021.\+h}}
+\subsubsection{\texorpdfstring{S\+I7021\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON}{SI7021\_RESOLUTION}}
+{\footnotesize\ttfamily enum \hyperlink{si7021_8h_ad2e0aa498b8faee91d8da4930f61625e}{S\+I7021\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON}}
+
+
+
+Enum contain all valid Resolution configuration of sensor. 
+
+\begin{DoxyNote}{Note}
+Only bit 0 and bit 7 matter, other bits will be ignored 
+\end{DoxyNote}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+I7021\+\_\+12\+\_\+14\+\_\+\+R\+ES@{S\+I7021\+\_\+12\+\_\+14\+\_\+\+R\+ES}!si7021.\+h@{si7021.\+h}}\index{si7021.\+h@{si7021.\+h}!S\+I7021\+\_\+12\+\_\+14\+\_\+\+R\+ES@{S\+I7021\+\_\+12\+\_\+14\+\_\+\+R\+ES}}}\mbox{\Hypertarget{si7021_8h_ad2e0aa498b8faee91d8da4930f61625eaf7e31fbc799b25fdc172fb9d6c01ae84}\label{si7021_8h_ad2e0aa498b8faee91d8da4930f61625eaf7e31fbc799b25fdc172fb9d6c01ae84}} 
+S\+I7021\+\_\+12\+\_\+14\+\_\+\+R\+ES&12bit RH resolution, 14bit temperature resolution \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+I7021\+\_\+8\+\_\+12\+\_\+\+R\+ES@{S\+I7021\+\_\+8\+\_\+12\+\_\+\+R\+ES}!si7021.\+h@{si7021.\+h}}\index{si7021.\+h@{si7021.\+h}!S\+I7021\+\_\+8\+\_\+12\+\_\+\+R\+ES@{S\+I7021\+\_\+8\+\_\+12\+\_\+\+R\+ES}}}\mbox{\Hypertarget{si7021_8h_ad2e0aa498b8faee91d8da4930f61625ea3f096d60050714a92d1889dbb9d4ba8a}\label{si7021_8h_ad2e0aa498b8faee91d8da4930f61625ea3f096d60050714a92d1889dbb9d4ba8a}} 
+S\+I7021\+\_\+8\+\_\+12\+\_\+\+R\+ES&8bit RH resolution, 12bit temperature resolution \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+I7021\+\_\+10\+\_\+13\+\_\+\+R\+ES@{S\+I7021\+\_\+10\+\_\+13\+\_\+\+R\+ES}!si7021.\+h@{si7021.\+h}}\index{si7021.\+h@{si7021.\+h}!S\+I7021\+\_\+10\+\_\+13\+\_\+\+R\+ES@{S\+I7021\+\_\+10\+\_\+13\+\_\+\+R\+ES}}}\mbox{\Hypertarget{si7021_8h_ad2e0aa498b8faee91d8da4930f61625ea2cfafb4c2314cb0c4a4ee0f840f5f3a1}\label{si7021_8h_ad2e0aa498b8faee91d8da4930f61625ea2cfafb4c2314cb0c4a4ee0f840f5f3a1}} 
+S\+I7021\+\_\+10\+\_\+13\+\_\+\+R\+ES&10bit RH resolution, 13bit temperature resolution \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+I7021\+\_\+11\+\_\+11\+\_\+\+R\+ES@{S\+I7021\+\_\+11\+\_\+11\+\_\+\+R\+ES}!si7021.\+h@{si7021.\+h}}\index{si7021.\+h@{si7021.\+h}!S\+I7021\+\_\+11\+\_\+11\+\_\+\+R\+ES@{S\+I7021\+\_\+11\+\_\+11\+\_\+\+R\+ES}}}\mbox{\Hypertarget{si7021_8h_ad2e0aa498b8faee91d8da4930f61625ea7db14da7bc2b59132110df783f3b31b0}\label{si7021_8h_ad2e0aa498b8faee91d8da4930f61625ea7db14da7bc2b59132110df783f3b31b0}} 
+S\+I7021\+\_\+11\+\_\+11\+\_\+\+R\+ES&11bit RH resolution, 11bit temperature resolution \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 87 of file si7021.\+h.
+
+\mbox{\Hypertarget{si7021_8h_ae8747642c3a83dd9ae9ae0333b84f9f3}\label{si7021_8h_ae8747642c3a83dd9ae9ae0333b84f9f3}} 
+\index{si7021.\+h@{si7021.\+h}!S\+I7021\+\_\+\+V\+D\+D\+\_\+\+S\+T\+A\+T\+US@{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+S\+T\+A\+T\+US}}
+\index{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+S\+T\+A\+T\+US@{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+S\+T\+A\+T\+US}!si7021.\+h@{si7021.\+h}}
+\subsubsection{\texorpdfstring{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+S\+T\+A\+T\+US}{SI7021\_VDD\_STATUS}}
+{\footnotesize\ttfamily enum \hyperlink{si7021_8h_ae8747642c3a83dd9ae9ae0333b84f9f3}{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+S\+T\+A\+T\+US}}
+
+
+
+V\+DD status of sensor return type. 
+
+\begin{DoxyNote}{Note}
+Consider changing power supply if V\+DD is L\+OW, the sensor may not work correctly 
+\end{DoxyNote}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+OK@{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+OK}!si7021.\+h@{si7021.\+h}}\index{si7021.\+h@{si7021.\+h}!S\+I7021\+\_\+\+V\+D\+D\+\_\+\+OK@{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+OK}}}\mbox{\Hypertarget{si7021_8h_ae8747642c3a83dd9ae9ae0333b84f9f3acdfe83b75cad583ca9ee2997322174ea}\label{si7021_8h_ae8747642c3a83dd9ae9ae0333b84f9f3acdfe83b75cad583ca9ee2997322174ea}} 
+S\+I7021\+\_\+\+V\+D\+D\+\_\+\+OK&V\+DD is OK ($>$1.\+9 V) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+L\+OW@{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+L\+OW}!si7021.\+h@{si7021.\+h}}\index{si7021.\+h@{si7021.\+h}!S\+I7021\+\_\+\+V\+D\+D\+\_\+\+L\+OW@{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+L\+OW}}}\mbox{\Hypertarget{si7021_8h_ae8747642c3a83dd9ae9ae0333b84f9f3a1ad64fa668e0c9b079a23971c4bb1505}\label{si7021_8h_ae8747642c3a83dd9ae9ae0333b84f9f3a1ad64fa668e0c9b079a23971c4bb1505}} 
+S\+I7021\+\_\+\+V\+D\+D\+\_\+\+L\+OW&V\+DD is L\+OW (1.\+9$\sim$1.8V) \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 97 of file si7021.\+h.
 
 
 
@@ -508,6 +576,9 @@ Get sensor electronic id.
 \begin{DoxyReturn}{Returns}
 64bit (uint64\+\_\+t) value contain sensor electronic id 
 \end{DoxyReturn}
+\begin{DoxyNote}{Note}
+if error happen, return 0x\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+FF 
+\end{DoxyNote}
 
 
 Definition at line 370 of file si7021.\+c.
@@ -606,11 +677,11 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=348pt]{si7021_8h_a6ec069cec3b96b638c8f0426aca309b2_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{si7021_8h_a0558cec0e5916d2bc09a51680fa04c2e}\label{si7021_8h_a0558cec0e5916d2bc09a51680fa04c2e}} 
+\mbox{\Hypertarget{si7021_8h_a7347c3be7bfb07b492e4cbed1cdbcfb9}\label{si7021_8h_a7347c3be7bfb07b492e4cbed1cdbcfb9}} 
 \index{si7021.\+h@{si7021.\+h}!si7021\+\_\+get\+\_\+resolution@{si7021\+\_\+get\+\_\+resolution}}
 \index{si7021\+\_\+get\+\_\+resolution@{si7021\+\_\+get\+\_\+resolution}!si7021.\+h@{si7021.\+h}}
 \subsubsection{\texorpdfstring{si7021\+\_\+get\+\_\+resolution()}{si7021\_get\_resolution()}}
-{\footnotesize\ttfamily uint8\+\_\+t si7021\+\_\+get\+\_\+resolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{si7021_8h_ad2e0aa498b8faee91d8da4930f61625e}{S\+I7021\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON} si7021\+\_\+get\+\_\+resolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -637,7 +708,7 @@ Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=331pt]{si7021_8h_a0558cec0e5916d2bc09a51680fa04c2e_cgraph}
+\includegraphics[width=331pt]{si7021_8h_a7347c3be7bfb07b492e4cbed1cdbcfb9_cgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{si7021_8h_a82f9c8e22626638e47729098f8493c1f}\label{si7021_8h_a82f9c8e22626638e47729098f8493c1f}} 
@@ -760,11 +831,11 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{si7021_8h_aac2b7c97826cdeb499ac224a8120fee2_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{si7021_8h_a140788067480f8a462ed2db6a07154d1}\label{si7021_8h_a140788067480f8a462ed2db6a07154d1}} 
+\mbox{\Hypertarget{si7021_8h_a5b42332bda6837327d02700bbaca7060}\label{si7021_8h_a5b42332bda6837327d02700bbaca7060}} 
 \index{si7021.\+h@{si7021.\+h}!si7021\+\_\+read\+\_\+vdd\+\_\+status@{si7021\+\_\+read\+\_\+vdd\+\_\+status}}
 \index{si7021\+\_\+read\+\_\+vdd\+\_\+status@{si7021\+\_\+read\+\_\+vdd\+\_\+status}!si7021.\+h@{si7021.\+h}}
 \subsubsection{\texorpdfstring{si7021\+\_\+read\+\_\+vdd\+\_\+status()}{si7021\_read\_vdd\_status()}}
-{\footnotesize\ttfamily uint8\+\_\+t si7021\+\_\+read\+\_\+vdd\+\_\+status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{si7021_8h_ae8747642c3a83dd9ae9ae0333b84f9f3}{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+S\+T\+A\+T\+US} si7021\+\_\+read\+\_\+vdd\+\_\+status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -773,8 +844,8 @@ Check sensors V\+DD.
 \begin{DoxyReturn}{Returns}
 8bit (uint8\+\_\+t) value
 \begin{DoxyItemize}
-\item \hyperlink{si7021_8h_ac7934e73c20c5721d2781bf20cdb3b3c}{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+OK} V\+DD is OK
-\item \hyperlink{si7021_8h_ac3635b86980e04705efb3d2b87aeafe7}{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+L\+OW} V\+DD is L\+OW 
+\item \hyperlink{si7021_8h_ae8747642c3a83dd9ae9ae0333b84f9f3acdfe83b75cad583ca9ee2997322174ea}{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+OK} V\+DD is OK
+\item \hyperlink{si7021_8h_ae8747642c3a83dd9ae9ae0333b84f9f3a1ad64fa668e0c9b079a23971c4bb1505}{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+L\+OW} V\+DD is L\+OW 
 \end{DoxyItemize}
 \end{DoxyReturn}
 \begin{DoxyNote}{Note}
@@ -792,7 +863,7 @@ Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=342pt]{si7021_8h_a140788067480f8a462ed2db6a07154d1_cgraph}
+\includegraphics[width=342pt]{si7021_8h_a5b42332bda6837327d02700bbaca7060_cgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{si7021_8h_ab4db1385ee975ed53c1b4cb8b2f82da7}\label{si7021_8h_ab4db1385ee975ed53c1b4cb8b2f82da7}} 
@@ -860,11 +931,11 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{si7021_8h_a65fe3b1e33bdbebf8df2c8d51bbbf675_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{si7021_8h_a4d97945c1a14dd11da33f3fabacf6b27}\label{si7021_8h_a4d97945c1a14dd11da33f3fabacf6b27}} 
+\mbox{\Hypertarget{si7021_8h_afd590ce231e3b83309411c505af7e169}\label{si7021_8h_afd590ce231e3b83309411c505af7e169}} 
 \index{si7021.\+h@{si7021.\+h}!si7021\+\_\+set\+\_\+resolution@{si7021\+\_\+set\+\_\+resolution}}
 \index{si7021\+\_\+set\+\_\+resolution@{si7021\+\_\+set\+\_\+resolution}!si7021.\+h@{si7021.\+h}}
 \subsubsection{\texorpdfstring{si7021\+\_\+set\+\_\+resolution()}{si7021\_set\_resolution()}}
-{\footnotesize\ttfamily \hyperlink{si7021_8h_aeec681879f00b18fe17bddc989b9582d}{si7021\+\_\+err\+\_\+t} si7021\+\_\+set\+\_\+resolution (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{resolution }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{si7021_8h_aeec681879f00b18fe17bddc989b9582d}{si7021\+\_\+err\+\_\+t} si7021\+\_\+set\+\_\+resolution (\begin{DoxyParamCaption}\item[{\hyperlink{si7021_8h_ad2e0aa498b8faee91d8da4930f61625e}{S\+I7021\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON}}]{resolution }\end{DoxyParamCaption})}
 
 
 
@@ -897,7 +968,7 @@ Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=333pt]{si7021_8h_a4d97945c1a14dd11da33f3fabacf6b27_cgraph}
+\includegraphics[width=333pt]{si7021_8h_afd590ce231e3b83309411c505af7e169_cgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{si7021_8h_a7800e376fe6c29d695e3dd36ad28a1e9}\label{si7021_8h_a7800e376fe6c29d695e3dd36ad28a1e9}} 
@@ -946,5 +1017,5 @@ Internal variable for storing sensor information.
 
 
 
-Definition at line 123 of file si7021.\+h.
+Definition at line 126 of file si7021.\+h.
 

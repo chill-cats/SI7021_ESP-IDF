@@ -78,21 +78,26 @@ extern "C" {
 
 /**
  * @}
- *
- * @defgroup SI7021_RES_HEX SI7021 resolution in hex
- *
- * @{
- */
-#define SI7021_12_14_RES			0x00		/*!< 12bit RH resolution, 14bit temperature resolution */
-#define SI7021_8_12_RES				0x01		/*!<  8bit RH resolution, 12bit temperature resolution */
-#define SI7021_10_13_RES			0x80		/*!< 10bit RH resolution, 13bit temperature resolution */
-#define SI7021_11_11_RES			0x81		/*!< 11bit RH resolution, 11bit temperature resolution */
-/**
- * @}
  */
 
-#define SI7021_VDD_OK				0x01		/*!< VDD is OK (>1.9 V) */
-#define SI7021_VDD_LOW				0x00		/*!< VDD is LOW (1.9~1.8V) */
+/**
+ *	@brief Enum contain all valid Resolution configuration of sensor
+ *	@note Only bit 0 and bit 7 matter, other bits will be ignored
+ */
+typedef enum SI7021_RESOLUTION {
+	SI7021_12_14_RES = (uint8_t) 0x00, /*!< 12bit RH resolution, 14bit temperature resolution */
+	SI7021_8_12_RES = (uint8_t) 0x01, /*!<  8bit RH resolution, 12bit temperature resolution */
+	SI7021_10_13_RES = (uint8_t) 0x80, /*!< 10bit RH resolution, 13bit temperature resolution */
+	SI7021_11_11_RES = (uint8_t) 0x81 /*!< 11bit RH resolution, 11bit temperature resolution */
+} SI7021_RESOLUTION;
+/**
+ *	@brief VDD status of sensor return type
+ *	@note Consider changing power supply if VDD is LOW, the sensor may not work correctly
+ */
+typedef enum SI7021_VDD_STATUS {
+	SI7021_VDD_OK = (uint8_t) 0x01, /*!< VDD is OK (>1.9 V) */
+	SI7021_VDD_LOW = (uint8_t) 0x00 /*!< VDD is LOW (1.9~1.8V) */
+} SI7021_VDD_STATUS;
 
 #define SI7021_HEATER_ON			0x01		/*!< Heater is ON */
 #define SI7021_HEATER_OFF			0x00		/*!< Heater is OFF */
@@ -110,18 +115,15 @@ typedef struct si7021_config_t {
 
 } si7021_config_t;
 
-
 /**
  * @brief Error type for return value.
  */
 typedef uint8_t si7021_err_t;
 
-
 /**
  * @brief Internal variable for storing sensor information.
  */
 si7021_config_t __si7021_config;
-
 
 /**
  * @brief Initialize SI7021 sensor
@@ -134,7 +136,6 @@ si7021_config_t __si7021_config;
  */
 si7021_err_t si7021_init(si7021_config_t *config);
 
-
 /**
  * @brief Configure I2C Parameter for SI7021
  * @note Internal use only
@@ -144,7 +145,6 @@ si7021_err_t si7021_init(si7021_config_t *config);
  * 		- #SI7021_ERR_CONFIG Failed to configure I2C parameter
  */
 si7021_err_t __si7021_param_config(si7021_config_t *config);
-
 
 /**
  * @brief Configure I2C Driver for SI7021
@@ -156,7 +156,6 @@ si7021_err_t __si7021_param_config(si7021_config_t *config);
  */
 si7021_err_t __si7021_driver_config(si7021_config_t *config);
 
-
 /**
  * @brief Get data from sensors by issuing read command and read data return by sensor
  * @note Internal use only
@@ -165,7 +164,6 @@ si7021_err_t __si7021_driver_config(si7021_config_t *config);
  * @note This function will print to console if crc value is invalid
  */
 uint16_t __si7021_read(uint8_t cmd);
-
 
 /**
  * @brief Check data integrity with crc
@@ -176,7 +174,6 @@ uint16_t __si7021_read(uint8_t cmd);
  */
 bool __is_crc_valid(uint16_t value, uint8_t crc);
 
-
 /**
  * @brief Check the availability of sensor
  * @return
@@ -185,20 +182,17 @@ bool __is_crc_valid(uint16_t value, uint8_t crc);
  */
 si7021_err_t si7021_check_availability();
 
-
 /**
  * @brief Read temperature value from sensor
  * @return float value, temperature in <a href="https://en.wikipedia.org/wiki/Celsius">Celsius</a>
  */
 float si7021_read_temperature();
 
-
 /**
  * @brief Read <a href="https://en.wikipedia.org/wiki/Relative_humidity">Relative Humidity</a> value from sensor
  * @return float value, <a href="https://en.wikipedia.org/wiki/Relative_humidity">Relative Humidity</a> in percentage
  */
 float si7021_read_humidity();
-
 
 /**
  * @brief Read RH/T user register 1 from sensor
@@ -208,7 +202,6 @@ float si7021_read_humidity();
  * 		- 0 if failed to read
  */
 uint8_t __si7021_read_user_register();
-
 
 /**
  * @brief Write value to RH/T user register 1
@@ -223,7 +216,6 @@ uint8_t __si7021_read_user_register();
  */
 si7021_err_t __si7021_write_user_register(uint8_t value);
 
-
 /**
  * @brief Get current resolution of sensor
  * @return
@@ -232,7 +224,7 @@ si7021_err_t __si7021_write_user_register(uint8_t value);
  * 		- 0x80: 10bit RH resolution, 13bit temperature resolution
  * 		- 0x81: 11bit RH resolution, 11bit temperature resolution
  */
-uint8_t si7021_get_resolution();
+SI7021_RESOLUTION si7021_get_resolution();
 
 /**
  * @brief Reset the sensor
@@ -256,8 +248,7 @@ si7021_err_t si7021_soft_reset();
  * 		- #SI7021_ERR_INVALID_STATE Sensor is in invalid state
  * 		- #SI7021_ERR_TIMEOUT Timed out communicating with sensor
  */
-si7021_err_t si7021_set_resolution(uint8_t resolution);
-
+si7021_err_t si7021_set_resolution(SI7021_RESOLUTION resolution);
 
 /**
  * @brief Set heater register
@@ -304,7 +295,7 @@ uint8_t si7021_read_firmware_rev();
  * 		- #SI7021_VDD_LOW VDD is LOW
  * @note Consider changing power supply when VDD is LOW, sensors may not work correctly
  */
-uint8_t si7021_read_vdd_status();
+SI7021_VDD_STATUS si7021_read_vdd_status();
 /**
  * @brief Check sensors heater status
  * @return 8bit (uint8_t) value
@@ -316,6 +307,7 @@ uint8_t si7021_get_heater_status();
 /**
  * @brief Get sensor electronic id
  * @return 64bit (uint64_t) value contain sensor electronic id
+ * @note if error happen, return 0xFFFFFFFFFFFFFFFF
  */
 uint64_t get_electronic_id();
 

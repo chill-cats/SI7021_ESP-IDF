@@ -1,0 +1,4 @@
+<map id="si7021_set_resolution" name="si7021_set_resolution">
+<area shape="rect" id="node2" href="$si7021_8c.html#a91041d121bd0dff34dc9383479286e2d" title="Read RH/T user register 1 from sensor. " alt="" coords="203,5,341,47"/>
+<area shape="rect" id="node3" href="$si7021_8c.html#ab01f45ffce7fdfa1f150f4b3f15c4e33" title="Write value to RH/T user register 1. " alt="" coords="201,71,343,112"/>
+</map>

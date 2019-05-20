@@ -36,15 +36,15 @@ uint8\+\_\+t \hyperlink{si7021_8c_abb290c564f829818bb8160cc5a8c93d9}{si7021\+\_\
 \begin{DoxyCompactList}\small\item\em Reset the sensor. \end{DoxyCompactList}\item 
 uint8\+\_\+t \hyperlink{si7021_8c_a91041d121bd0dff34dc9383479286e2d}{\+\_\+\+\_\+si7021\+\_\+read\+\_\+user\+\_\+register} ()
 \begin{DoxyCompactList}\small\item\em Read R\+H/T user register 1 from sensor. \end{DoxyCompactList}\item 
-uint8\+\_\+t \hyperlink{si7021_8c_a0558cec0e5916d2bc09a51680fa04c2e}{si7021\+\_\+get\+\_\+resolution} ()
+\hyperlink{si7021_8h_ad2e0aa498b8faee91d8da4930f61625e}{S\+I7021\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON} \hyperlink{si7021_8c_a7347c3be7bfb07b492e4cbed1cdbcfb9}{si7021\+\_\+get\+\_\+resolution} ()
 \begin{DoxyCompactList}\small\item\em Get current resolution of sensor. \end{DoxyCompactList}\item 
-\hyperlink{si7021_8h_aeec681879f00b18fe17bddc989b9582d}{si7021\+\_\+err\+\_\+t} \hyperlink{si7021_8c_a4d97945c1a14dd11da33f3fabacf6b27}{si7021\+\_\+set\+\_\+resolution} (uint8\+\_\+t resolution)
+\hyperlink{si7021_8h_aeec681879f00b18fe17bddc989b9582d}{si7021\+\_\+err\+\_\+t} \hyperlink{si7021_8c_afd590ce231e3b83309411c505af7e169}{si7021\+\_\+set\+\_\+resolution} (\hyperlink{si7021_8h_ad2e0aa498b8faee91d8da4930f61625e}{S\+I7021\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON} resolution)
 \begin{DoxyCompactList}\small\item\em Set the sensors resolution. \end{DoxyCompactList}\item 
 \hyperlink{si7021_8h_aeec681879f00b18fe17bddc989b9582d}{si7021\+\_\+err\+\_\+t} \hyperlink{si7021_8c_ab01f45ffce7fdfa1f150f4b3f15c4e33}{\+\_\+\+\_\+si7021\+\_\+write\+\_\+user\+\_\+register} (uint8\+\_\+t value)
 \begin{DoxyCompactList}\small\item\em Write value to R\+H/T user register 1. \end{DoxyCompactList}\item 
 uint8\+\_\+t \hyperlink{si7021_8c_a1e1e3955782fa3079544f048d42ad88e}{si7021\+\_\+read\+\_\+firmware\+\_\+rev} ()
 \begin{DoxyCompactList}\small\item\em Read sensor firmware revision. \end{DoxyCompactList}\item 
-uint8\+\_\+t \hyperlink{si7021_8c_a140788067480f8a462ed2db6a07154d1}{si7021\+\_\+read\+\_\+vdd\+\_\+status} ()
+\hyperlink{si7021_8h_ae8747642c3a83dd9ae9ae0333b84f9f3}{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+S\+T\+A\+T\+US} \hyperlink{si7021_8c_a5b42332bda6837327d02700bbaca7060}{si7021\+\_\+read\+\_\+vdd\+\_\+status} ()
 \begin{DoxyCompactList}\small\item\em Check sensors V\+DD. \end{DoxyCompactList}\item 
 uint8\+\_\+t \hyperlink{si7021_8c_a6ec069cec3b96b638c8f0426aca309b2}{si7021\+\_\+get\+\_\+heater\+\_\+status} ()
 \begin{DoxyCompactList}\small\item\em Check sensors heater status. \end{DoxyCompactList}\item 
@@ -314,6 +314,9 @@ Get sensor electronic id.
 \begin{DoxyReturn}{Returns}
 64bit (uint64\+\_\+t) value contain sensor electronic id 
 \end{DoxyReturn}
+\begin{DoxyNote}{Note}
+if error happen, return 0x\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+FF 
+\end{DoxyNote}
 
 
 Definition at line 370 of file si7021.\+c.
@@ -405,19 +408,18 @@ Definition at line 304 of file si7021.\+c.
 
 References \+\_\+\+\_\+si7021\+\_\+read\+\_\+user\+\_\+register(), S\+I7021\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+O\+FF, and S\+I7021\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+ON.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=348pt]{si7021_8c_a6ec069cec3b96b638c8f0426aca309b2_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{si7021_8c_a0558cec0e5916d2bc09a51680fa04c2e}\label{si7021_8c_a0558cec0e5916d2bc09a51680fa04c2e}} 
+\mbox{\Hypertarget{si7021_8c_a7347c3be7bfb07b492e4cbed1cdbcfb9}\label{si7021_8c_a7347c3be7bfb07b492e4cbed1cdbcfb9}} 
 \index{si7021.\+c@{si7021.\+c}!si7021\+\_\+get\+\_\+resolution@{si7021\+\_\+get\+\_\+resolution}}
 \index{si7021\+\_\+get\+\_\+resolution@{si7021\+\_\+get\+\_\+resolution}!si7021.\+c@{si7021.\+c}}
 \subsubsection{\texorpdfstring{si7021\+\_\+get\+\_\+resolution()}{si7021\_get\_resolution()}}
-{\footnotesize\ttfamily uint8\+\_\+t si7021\+\_\+get\+\_\+resolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{si7021_8h_ad2e0aa498b8faee91d8da4930f61625e}{S\+I7021\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON} si7021\+\_\+get\+\_\+resolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -440,12 +442,11 @@ Definition at line 221 of file si7021.\+c.
 
 References \+\_\+\+\_\+si7021\+\_\+read\+\_\+user\+\_\+register().
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=331pt]{si7021_8c_a0558cec0e5916d2bc09a51680fa04c2e_cgraph}
+\includegraphics[width=331pt]{si7021_8c_a7347c3be7bfb07b492e4cbed1cdbcfb9_cgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{si7021_8c_a82f9c8e22626638e47729098f8493c1f}\label{si7021_8c_a82f9c8e22626638e47729098f8493c1f}} 
@@ -480,8 +481,7 @@ Definition at line 34 of file si7021.\+c.
 
 References \+\_\+\+\_\+si7021\+\_\+driver\+\_\+config(), \+\_\+\+\_\+si7021\+\_\+param\+\_\+config(), si7021\+\_\+check\+\_\+availability(), and S\+I7021\+\_\+\+E\+R\+R\+\_\+\+OK.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -534,8 +534,7 @@ Definition at line 94 of file si7021.\+c.
 
 References \+\_\+\+\_\+si7021\+\_\+read(), and S\+I7021\+\_\+\+M\+E\+A\+S\+R\+H\+\_\+\+N\+O\+H\+O\+L\+D\+\_\+\+C\+MD.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -563,19 +562,18 @@ Definition at line 86 of file si7021.\+c.
 
 References \+\_\+\+\_\+si7021\+\_\+read(), and S\+I7021\+\_\+\+M\+E\+A\+S\+T\+E\+M\+P\+\_\+\+N\+O\+H\+O\+L\+D\+\_\+\+C\+MD.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{si7021_8c_aac2b7c97826cdeb499ac224a8120fee2_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{si7021_8c_a140788067480f8a462ed2db6a07154d1}\label{si7021_8c_a140788067480f8a462ed2db6a07154d1}} 
+\mbox{\Hypertarget{si7021_8c_a5b42332bda6837327d02700bbaca7060}\label{si7021_8c_a5b42332bda6837327d02700bbaca7060}} 
 \index{si7021.\+c@{si7021.\+c}!si7021\+\_\+read\+\_\+vdd\+\_\+status@{si7021\+\_\+read\+\_\+vdd\+\_\+status}}
 \index{si7021\+\_\+read\+\_\+vdd\+\_\+status@{si7021\+\_\+read\+\_\+vdd\+\_\+status}!si7021.\+c@{si7021.\+c}}
 \subsubsection{\texorpdfstring{si7021\+\_\+read\+\_\+vdd\+\_\+status()}{si7021\_read\_vdd\_status()}}
-{\footnotesize\ttfamily uint8\+\_\+t si7021\+\_\+read\+\_\+vdd\+\_\+status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{si7021_8h_ae8747642c3a83dd9ae9ae0333b84f9f3}{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+S\+T\+A\+T\+US} si7021\+\_\+read\+\_\+vdd\+\_\+status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -584,8 +582,8 @@ Check sensors V\+DD.
 \begin{DoxyReturn}{Returns}
 8bit (uint8\+\_\+t) value
 \begin{DoxyItemize}
-\item \hyperlink{si7021_8h_ac7934e73c20c5721d2781bf20cdb3b3c}{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+OK} V\+DD is OK
-\item \hyperlink{si7021_8h_ac3635b86980e04705efb3d2b87aeafe7}{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+L\+OW} V\+DD is L\+OW 
+\item \hyperlink{si7021_8h_ae8747642c3a83dd9ae9ae0333b84f9f3acdfe83b75cad583ca9ee2997322174ea}{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+OK} V\+DD is OK
+\item \hyperlink{si7021_8h_ae8747642c3a83dd9ae9ae0333b84f9f3a1ad64fa668e0c9b079a23971c4bb1505}{S\+I7021\+\_\+\+V\+D\+D\+\_\+\+L\+OW} V\+DD is L\+OW 
 \end{DoxyItemize}
 \end{DoxyReturn}
 \begin{DoxyNote}{Note}
@@ -599,12 +597,11 @@ Definition at line 297 of file si7021.\+c.
 
 References \+\_\+\+\_\+si7021\+\_\+read\+\_\+user\+\_\+register(), S\+I7021\+\_\+\+V\+D\+D\+\_\+\+L\+OW, and S\+I7021\+\_\+\+V\+D\+D\+\_\+\+OK.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=342pt]{si7021_8c_a140788067480f8a462ed2db6a07154d1_cgraph}
+\includegraphics[width=342pt]{si7021_8c_a5b42332bda6837327d02700bbaca7060_cgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{si7021_8c_ab4db1385ee975ed53c1b4cb8b2f82da7}\label{si7021_8c_ab4db1385ee975ed53c1b4cb8b2f82da7}} 
@@ -665,19 +662,18 @@ Definition at line 361 of file si7021.\+c.
 
 References \+\_\+\+\_\+si7021\+\_\+read\+\_\+user\+\_\+register(), \+\_\+\+\_\+si7021\+\_\+write\+\_\+user\+\_\+register(), S\+I7021\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+O\+FF, and S\+I7021\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+ON.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{si7021_8c_a65fe3b1e33bdbebf8df2c8d51bbbf675_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{si7021_8c_a4d97945c1a14dd11da33f3fabacf6b27}\label{si7021_8c_a4d97945c1a14dd11da33f3fabacf6b27}} 
+\mbox{\Hypertarget{si7021_8c_afd590ce231e3b83309411c505af7e169}\label{si7021_8c_afd590ce231e3b83309411c505af7e169}} 
 \index{si7021.\+c@{si7021.\+c}!si7021\+\_\+set\+\_\+resolution@{si7021\+\_\+set\+\_\+resolution}}
 \index{si7021\+\_\+set\+\_\+resolution@{si7021\+\_\+set\+\_\+resolution}!si7021.\+c@{si7021.\+c}}
 \subsubsection{\texorpdfstring{si7021\+\_\+set\+\_\+resolution()}{si7021\_set\_resolution()}}
-{\footnotesize\ttfamily \hyperlink{si7021_8h_aeec681879f00b18fe17bddc989b9582d}{si7021\+\_\+err\+\_\+t} si7021\+\_\+set\+\_\+resolution (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{resolution }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{si7021_8h_aeec681879f00b18fe17bddc989b9582d}{si7021\+\_\+err\+\_\+t} si7021\+\_\+set\+\_\+resolution (\begin{DoxyParamCaption}\item[{\hyperlink{si7021_8h_ad2e0aa498b8faee91d8da4930f61625e}{S\+I7021\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON}}]{resolution }\end{DoxyParamCaption})}
 
 
 
@@ -706,12 +702,11 @@ Definition at line 225 of file si7021.\+c.
 
 References \+\_\+\+\_\+si7021\+\_\+read\+\_\+user\+\_\+register(), and \+\_\+\+\_\+si7021\+\_\+write\+\_\+user\+\_\+register().
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=333pt]{si7021_8c_a4d97945c1a14dd11da33f3fabacf6b27_cgraph}
+\includegraphics[width=333pt]{si7021_8c_afd590ce231e3b83309411c505af7e169_cgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{si7021_8c_abb290c564f829818bb8160cc5a8c93d9}\label{si7021_8c_abb290c564f829818bb8160cc5a8c93d9}} 

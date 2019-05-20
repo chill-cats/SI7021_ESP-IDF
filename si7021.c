@@ -218,11 +218,11 @@ uint8_t __si7021_read_user_register() {
 	return reg_value;
 }
 
-uint8_t si7021_get_resolution() {
+SI7021_RESOLUTION si7021_get_resolution() {
 	uint8_t reg_value = __si7021_read_user_register();
 	return reg_value & 0x81;
 }
-si7021_err_t si7021_set_resolution(uint8_t resolution) {
+si7021_err_t si7021_set_resolution(SI7021_RESOLUTION resolution) {
 	uint8_t current_reg_value = __si7021_read_user_register();
 	if (resolution & (1 << 0)) {
 		current_reg_value = (current_reg_value & ~(1 << 0)) | (1 << 0);
@@ -294,7 +294,7 @@ uint8_t si7021_read_firmware_rev() {
 	}
 	return firmware_rev;
 }
-uint8_t si7021_read_vdd_status() {
+SI7021_VDD_STATUS si7021_read_vdd_status() {
 	uint8_t register_value = __si7021_read_user_register();
 	if (register_value & (1 << 6)) {
 		return SI7021_VDD_LOW;
